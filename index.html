@@ -3,35 +3,39 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>$TRUPOW — Trump × Powell Meme Coin</title>
-  <meta name="description" content="$TRUPOW — When the MAGA pump meets the Fed’s money printer. Meme coin on Solana. No roadmap, just vibes." />
+  <title>$TRUMPOW — Trump × Powell Meme Coin</title>
+  <meta name="description" content="$TRUMPOW — When the MAGA pump meets the Fed’s money printer. Meme coin on Solana. No roadmap, just vibes." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#0a0b0f; --bg2:#0e1020; --text:#e8ecf2; --muted:#9aa3ad;
+      --bg:#0a0b0f; --text:#e8ecf2; --muted:#9aa3ad;
       --card:rgba(255,255,255,0.05); --stroke:rgba(255,255,255,0.08);
-      --gold:#f5c542; --yellow:#facc15; --red:#ef4444; --green:#22c55e; --blue:#60a5fa;
-      --ring:rgba(245,197,66,.28);
+      --yellow:#facc15; --ring:rgba(245,197,66,.28);
     }
     *{box-sizing:border-box}
-    html,body{margin:0;background:radial-gradient(1200px 800px at -10% -10%, rgba(250,204,21,.15), transparent 60%),
-                               radial-gradient(1000px 700px at 110% 10%, rgba(245,197,66,.18), transparent 55%),
-                               radial-gradient(800px 600px at 50% 120%, rgba(239,68,68,.14), transparent 60%),
-                               var(--bg);
-              color:var(--text);font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    html,body{margin:0;background:
+      radial-gradient(1200px 800px at -10% -10%, rgba(250,204,21,.15), transparent 60%),
+      radial-gradient(1000px 700px at 110% 10%, rgba(245,197,66,.18), transparent 55%),
+      radial-gradient(800px 600px at 50% 120%, rgba(239,68,68,.12), transparent 60%),
+      var(--bg);
+      color:var(--text);
+      font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    }
     img{max-width:100%;display:block}
     a{color:inherit;text-decoration:none}
     .container{max-width:1120px;margin:0 auto;padding:0 20px}
-    .site-header{position:sticky;top:0;z-index:40;backdrop-filter:saturate(120%) blur(8px);background:linear-gradient(180deg, rgba(10,11,15,.8), rgba(10,11,15,.35));border-bottom:1px solid var(--stroke)}
+    .site-header{position:sticky;top:0;z-index:40;backdrop-filter:saturate(120%) blur(8px);
+      background:linear-gradient(180deg, rgba(10,11,15,.8), rgba(10,11,15,.35));
+      border-bottom:1px solid var(--stroke)}
     .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
     .brand{display:flex;align-items:center;gap:12px}
     .wordmark{font-weight:800;letter-spacing:.3px;color:var(--yellow)}
     .actions{display:flex;gap:10px}
     .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:12px;font-weight:700;border:1px solid var(--stroke);transition:.22s;background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02))}
     .btn:hover{transform:translateY(-1px)}
-    .btn.solid{background:linear-gradient(180deg, var(--yellow), #eab308);color:#111;border-color:#eab308;text-shadow:0 1px 0 rgba(255,255,255,.3)}
+    .btn.solid{background:linear-gradient(180deg, var(--yellow), #eab308);color:#111;border-color:#eab308}
     .btn.outline{color:var(--text)}
     .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--stroke)}
     .hero-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;min-height:78vh;padding:64px 0}
@@ -39,14 +43,21 @@
     h1{font-size:52px;line-height:1.05;margin:8px 0 12px}
     .accent{color:var(--yellow)}
     .sub{color:#dfe4ec;opacity:.95;max-width:58ch}
-    .logo-card{border-radius:22px;overflow:hidden;border:1px solid var(--stroke);box-shadow:0 40px 120px rgba(245,197,66,.18)}
+    .glass{margin-top:22px;background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));border:1px solid var(--stroke);border-radius:16px;padding:16px}
+    .row{display:flex;gap:10px}
+    .row input{flex:1;background:rgba(255,255,255,.04);border:1px solid var(--stroke);border-radius:12px;color:var(--text);padding:12px}
+    .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .hero-right{display:flex;justify-content:center}
+    .logo-card{width:380px;max-width:95%;border-radius:22px;border:1px solid var(--stroke);overflow:hidden;box-shadow:0 40px 120px rgba(245,197,66,.18)}
+    section{padding:56px 0;border-bottom:1px solid var(--stroke)}
+    h2{font-size:28px;margin:0 0 12px}
   </style>
 </head>
 <body>
 <header class="site-header">
   <div class="container nav">
     <div class="brand">
-      <span class="wordmark">$TRUPOW</span>
+      <span class="wordmark">$TRUMPOW</span>
     </div>
     <nav class="actions">
       <a class="btn outline" id="buyBtn" href="#" target="_blank" rel="noopener">Buy on Pump.fun</a>
@@ -54,23 +65,73 @@
     </nav>
   </div>
 </header>
+
 <section class="hero">
   <div class="container hero-inner">
     <div>
-      <div class="kicker">Solana • Meme coin</div>
-      <h1><span class="accent">$TRUPOW</span> — Trump × Powell</h1>
+      <div class="kicker">Solana • Meme Coin</div>
+      <h1><span class="accent">$TRUMPOW</span> — Trump × Powell</h1>
       <p class="sub">When the MAGA pump meets the Fed’s money printer.</p>
-      <p class="sub">$TRUPOW is the ultimate mashup of political chaos and monetary madness, fusing the unstoppable hype of Donald J. Trump with the market-shifting power of Jerome “Rate Hike” Powell. Together, they’re here to do what they do best — move markets, print bags, and make traders sweat.</p>
-      <p class="sub">In the world of $TRUPOW, rate cuts aren’t boring economic policy… they’re the fuel for the next moonshot. Inflation? Just more reason to pump harder.</p>
-      <p class="sub">No promises. No roadmaps. Just a community-powered meme coin designed to ride headlines, break charts, and deliver maximum entertainment on the Solana blockchain.</p>
+      <p class="sub">$TRUMPOW is the ultimate mashup of political chaos and monetary madness, fusing the unstoppable hype of Donald J. Trump with the market‑shifting power of Jerome “Rate Hike” Powell. Together, they’re here to do what they do best — move markets, print bags, and make traders sweat.</p>
+      <p class="sub">In the world of $TRUMPOW, rate cuts aren’t boring economic policy… they’re the fuel for the next moonshot. Inflation? Just more reason to pump harder.</p>
+      <p class="sub">No promises. No roadmaps. Just a community‑powered meme coin designed to ride headlines, break charts, and deliver maximum entertainment on the Solana blockchain.</p>
       <p class="sub"><strong>Make America Pump Again. Print Gains, Not Dollars.</strong></p>
+
+      <div class="glass">
+        <div style="font-size:13px;color:#9aa3ad;margin-bottom:8px">Contract</div>
+        <div class="row">
+          <input id="contractInput" value="PASTE_YOUR_TRUMPOW_CONTRACT_HERE" readonly>
+          <button id="copyBtn" class="btn">Copy</button>
+        </div>
+        <div class="cta">
+          <a class="btn solid" id="buyBtn2" href="#" target="_blank" rel="noopener">Buy on Pump.fun</a>
+          <a class="btn outline" id="chartBtn" href="#" target="_blank" rel="noopener">View Chart</a>
+        </div>
+      </div>
     </div>
     <div class="hero-right">
-      <div class="logo-card">
-        <img src="trupow-hero.png" alt="$TRUPOW Logo" />
-      </div>
+      <div class="logo-card"><img src="trumpow-hero.png" alt="$TRUMPOW artwork"></div>
     </div>
   </div>
 </section>
+
+<section class="container" id="how">
+  <h2>How to Buy</h2>
+  <ol>
+    <li><strong>Install Phantom</strong> (or Solflare) and create a wallet.</li>
+    <li><strong>Fund with SOL</strong> from an exchange (Binance, Coinbase) and send to your wallet.</li>
+    <li><strong>Open Pump.fun</strong> via the button above or search for $TRUMPOW.</li>
+    <li><strong>Verify the contract</strong> matches the address shown here.</li>
+    <li><strong>Swap SOL → $TRUMPOW</strong>.</li>
+  </ol>
+</section>
+
+<footer class="site-footer">
+  <div class="container" style="padding:26px 0;color:#9aa3ad;font-size:14px;border-top:1px solid var(--stroke)">
+    © <span id="yr"></span> The $TRUMPOW community. Not financial advice.
+  </div>
+</footer>
+
+<script>
+  // Config
+  const CONTRACT = 'PASTE_YOUR_TRUMPOW_CONTRACT_HERE';
+  const BUY_LINK = '#';   // e.g., https://pump.fun/xxxxxxxx
+  const CHART_LINK = '#'; // e.g., Dexscreener link
+
+  // Fill year and links
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  document.getElementById('contractInput').value = CONTRACT;
+  document.getElementById('buyBtn').href = BUY_LINK;
+  document.getElementById('buyBtn2').href = BUY_LINK;
+  document.getElementById('chartBtn').href = CHART_LINK;
+
+  // Copy button
+  document.getElementById('copyBtn').addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(CONTRACT); } catch(e) {}
+    const b = document.getElementById('copyBtn');
+    const t = b.textContent; b.textContent = 'Copied!';
+    setTimeout(()=> b.textContent = t, 1200);
+  });
+</script>
 </body>
 </html>
